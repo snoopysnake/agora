@@ -167,6 +167,7 @@ html, body {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 40%, rgba(225, 255, 255, 0) 60%), url("TransparentArrowBkgd.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
+	padding-bottom: .5em;
 	/*background-color: #647B33;*/
 }
 
@@ -185,7 +186,7 @@ html, body {
 }
 
 .transparent {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.88);
 }
 
 .promo {
@@ -230,30 +231,22 @@ html, body {
 }
 
 .arrow {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.arrow > div {
-	width: 0;
-	height: 0;
-	border-left: 37vw solid transparent;
-	border-right: 37vw solid transparent;
-	border-top: 18vh solid rgba(255,255,255,.95);
+	background-image: url("TransparentArrow3.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 10vw;
 	animation: pulse 2s infinite;
-
 }
 
 .container-animate {
-	background-color: rgba(255,255,255,.95);
+	background-color: rgba(255,255,255,.88);
 	animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-	0%   { opacity: .7; }
+	0%   { opacity: .8; }
 	50% { opacity: 1; }
-	100% { opacity: .7; }
+	100% { opacity: .8; }
 }
 
 .purchase {
